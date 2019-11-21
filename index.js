@@ -25,7 +25,7 @@ function longPlaneteerCalls(calls) {
   } return false
 }
 
-function findTheCheese (foods) {
+function findTheCheese (foods) { // [ "grapes", "gouda", "cheddar" ]
   for (var i=0; i < foods.length; i++){
     if (foods[i] === "cheddar"){
       return foods[i]
@@ -36,4 +36,15 @@ function findTheCheese (foods) {
     }
   }
   return "no cheese!"
+}
+// "one".charAt(0) == "o"
+function wordsWithB(words){
+  var wordsB = []
+  for (var i = 0; i < words.length; i++){
+    var currentWord = words[i]
+    if (currentWord.charAt(0) === "b"){
+      wordsB.push(currentWord)
+    }
+  }
+  return wordsB
 }
